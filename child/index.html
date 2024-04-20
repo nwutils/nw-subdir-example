@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <style>
+      body {
+        background: #333;
+        color: #CCC;
+        font-family: sans-serif;
+      }
+      h1,
+      div {
+        margin: 14px;
+      }
+      strong {
+        display: block;
+      }
+      pre {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test</h1>
+
+    <div>
+      <strong>NW.js version:</strong>
+      <script>document.write(process.versions.nw);</script>
+    </div>
+
+    <div>
+      <strong>Node version:</strong>
+      <script>document.write(process.version);</script>
+    </div>
+
+    <div>
+      <strong>Start Path:</strong>
+      <script>document.write(nw.App.startPath);</script>
+    </div>
+
+    <div>
+      <strong>Current working directory:</strong>
+      <script>document.write(process.cwd());</script>
+    </div>
+
+    <div>
+      <strong>Loaded Manifest</strong>
+      <script>
+        const manifest = JSON.stringify(nw.App.manifest, null, 2);
+        document.write('<pre>' + manifest + '</pre>');
+      </script>
+    </div>
+  </body>
+</html>

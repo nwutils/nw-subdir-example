@@ -1,0 +1,10 @@
+{
+  "description": "Example repo for having a parent package.json file that runs NW.js pointed to a child folder with its own package.json",
+  "license": "MIT",
+  "scripts": {
+    "start": "nw ./child"
+  },
+  "devDependencies": {
+    "nw": "0.45.3-sdk"
+  }
+}
